@@ -15,6 +15,8 @@
 		8D71A02B2BF78B7600AFDA2D /* ArbuzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A02A2BF78B7600AFDA2D /* ArbuzAppTests.swift */; };
 		8D71A0352BF78B7600AFDA2D /* ArbuzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */; };
 		8D71A0372BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */; };
+		8D71A0492BF7989B00AFDA2D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0482BF7989B00AFDA2D /* TabBarController.swift */; };
+		8D71A04C2BF798F900AFDA2D /* BucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8D71A0302BF78B7600AFDA2D /* ArbuzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArbuzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITests.swift; sourceTree = "<group>"; };
 		8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D71A0482BF7989B00AFDA2D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +163,19 @@
 		8D71A0472BF78E8300AFDA2D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D71A0172BF78B7300AFDA2D /* MainViewController.swift */,
+				8D71A04A2BF798E900AFDA2D /* Tabs */,
+				8D71A0482BF7989B00AFDA2D /* TabBarController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D71A04A2BF798E900AFDA2D /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0172BF78B7300AFDA2D /* MainViewController.swift */,
+				8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +309,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D71A0182BF78B7300AFDA2D /* MainViewController.swift in Sources */,
+				8D71A0492BF7989B00AFDA2D /* TabBarController.swift in Sources */,
 				8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */,
 				8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */,
+				8D71A04C2BF798F900AFDA2D /* BucketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
