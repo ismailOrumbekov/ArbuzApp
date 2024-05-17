@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0132BF78B7300AFDA2D /* AppDelegate.swift */; };
+		8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0152BF78B7300AFDA2D /* SceneDelegate.swift */; };
+		8D71A0182BF78B7300AFDA2D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0172BF78B7300AFDA2D /* MainViewController.swift */; };
+		8D71A01D2BF78B7600AFDA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D71A01C2BF78B7600AFDA2D /* Assets.xcassets */; };
+		8D71A0202BF78B7600AFDA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D71A01E2BF78B7600AFDA2D /* LaunchScreen.storyboard */; };
+		8D71A02B2BF78B7600AFDA2D /* ArbuzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A02A2BF78B7600AFDA2D /* ArbuzAppTests.swift */; };
+		8D71A0352BF78B7600AFDA2D /* ArbuzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */; };
+		8D71A0372BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D71A0272BF78B7600AFDA2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D71A0082BF78B7300AFDA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D71A00F2BF78B7300AFDA2D;
+			remoteInfo = ArbuzApp;
+		};
+		8D71A0312BF78B7600AFDA2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D71A0082BF78B7300AFDA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D71A00F2BF78B7300AFDA2D;
+			remoteInfo = ArbuzApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D71A0102BF78B7300AFDA2D /* ArbuzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArbuzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D71A0132BF78B7300AFDA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D71A0152BF78B7300AFDA2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8D71A0172BF78B7300AFDA2D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8D71A01C2BF78B7600AFDA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D71A01F2BF78B7600AFDA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D71A0212BF78B7600AFDA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D71A0262BF78B7600AFDA2D /* ArbuzAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArbuzAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D71A02A2BF78B7600AFDA2D /* ArbuzAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppTests.swift; sourceTree = "<group>"; };
+		8D71A0302BF78B7600AFDA2D /* ArbuzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArbuzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITests.swift; sourceTree = "<group>"; };
+		8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D71A00D2BF78B7300AFDA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A0232BF78B7600AFDA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A02D2BF78B7600AFDA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D71A0072BF78B7300AFDA2D = {
+			isa = PBXGroup;
+			children = (
+				8D71A0122BF78B7300AFDA2D /* ArbuzApp */,
+				8D71A0292BF78B7600AFDA2D /* ArbuzAppTests */,
+				8D71A0332BF78B7600AFDA2D /* ArbuzAppUITests */,
+				8D71A0112BF78B7300AFDA2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D71A0112BF78B7300AFDA2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0102BF78B7300AFDA2D /* ArbuzApp.app */,
+				8D71A0262BF78B7600AFDA2D /* ArbuzAppTests.xctest */,
+				8D71A0302BF78B7600AFDA2D /* ArbuzAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D71A0122BF78B7300AFDA2D /* ArbuzApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0472BF78E8300AFDA2D /* Controllers */,
+				8D71A0462BF78E7C00AFDA2D /* ViewModels */,
+				8D71A0452BF78E7200AFDA2D /* Models */,
+				8D71A0442BF78DBC00AFDA2D /* Helpers */,
+				8D71A0432BF78D9600AFDA2D /* Application */,
+			);
+			path = ArbuzApp;
+			sourceTree = "<group>";
+		};
+		8D71A0292BF78B7600AFDA2D /* ArbuzAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A02A2BF78B7600AFDA2D /* ArbuzAppTests.swift */,
+			);
+			path = ArbuzAppTests;
+			sourceTree = "<group>";
+		};
+		8D71A0332BF78B7600AFDA2D /* ArbuzAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */,
+				8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */,
+			);
+			path = ArbuzAppUITests;
+			sourceTree = "<group>";
+		};
+		8D71A0432BF78D9600AFDA2D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0152BF78B7300AFDA2D /* SceneDelegate.swift */,
+				8D71A0132BF78B7300AFDA2D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8D71A0442BF78DBC00AFDA2D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0212BF78B7600AFDA2D /* Info.plist */,
+				8D71A01E2BF78B7600AFDA2D /* LaunchScreen.storyboard */,
+				8D71A01C2BF78B7600AFDA2D /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8D71A0452BF78E7200AFDA2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D71A0462BF78E7C00AFDA2D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D71A0472BF78E8300AFDA2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0172BF78B7300AFDA2D /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D71A00F2BF78B7300AFDA2D /* ArbuzApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D71A03A2BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzApp" */;
+			buildPhases = (
+				8D71A00C2BF78B7300AFDA2D /* Sources */,
+				8D71A00D2BF78B7300AFDA2D /* Frameworks */,
+				8D71A00E2BF78B7300AFDA2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArbuzApp;
+			productName = ArbuzApp;
+			productReference = 8D71A0102BF78B7300AFDA2D /* ArbuzApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D71A0252BF78B7600AFDA2D /* ArbuzAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D71A03D2BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzAppTests" */;
+			buildPhases = (
+				8D71A0222BF78B7600AFDA2D /* Sources */,
+				8D71A0232BF78B7600AFDA2D /* Frameworks */,
+				8D71A0242BF78B7600AFDA2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D71A0282BF78B7600AFDA2D /* PBXTargetDependency */,
+			);
+			name = ArbuzAppTests;
+			productName = ArbuzAppTests;
+			productReference = 8D71A0262BF78B7600AFDA2D /* ArbuzAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D71A02F2BF78B7600AFDA2D /* ArbuzAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D71A0402BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzAppUITests" */;
+			buildPhases = (
+				8D71A02C2BF78B7600AFDA2D /* Sources */,
+				8D71A02D2BF78B7600AFDA2D /* Frameworks */,
+				8D71A02E2BF78B7600AFDA2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D71A0322BF78B7600AFDA2D /* PBXTargetDependency */,
+			);
+			name = ArbuzAppUITests;
+			productName = ArbuzAppUITests;
+			productReference = 8D71A0302BF78B7600AFDA2D /* ArbuzAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D71A0082BF78B7300AFDA2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					8D71A00F2BF78B7300AFDA2D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					8D71A0252BF78B7600AFDA2D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 8D71A00F2BF78B7300AFDA2D;
+					};
+					8D71A02F2BF78B7600AFDA2D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 8D71A00F2BF78B7300AFDA2D;
+					};
+				};
+			};
+			buildConfigurationList = 8D71A00B2BF78B7300AFDA2D /* Build configuration list for PBXProject "ArbuzApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D71A0072BF78B7300AFDA2D;
+			productRefGroup = 8D71A0112BF78B7300AFDA2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D71A00F2BF78B7300AFDA2D /* ArbuzApp */,
+				8D71A0252BF78B7600AFDA2D /* ArbuzAppTests */,
+				8D71A02F2BF78B7600AFDA2D /* ArbuzAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D71A00E2BF78B7300AFDA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D71A0202BF78B7600AFDA2D /* LaunchScreen.storyboard in Resources */,
+				8D71A01D2BF78B7600AFDA2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A0242BF78B7600AFDA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A02E2BF78B7600AFDA2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D71A00C2BF78B7300AFDA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D71A0182BF78B7300AFDA2D /* MainViewController.swift in Sources */,
+				8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */,
+				8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A0222BF78B7600AFDA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D71A02B2BF78B7600AFDA2D /* ArbuzAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D71A02C2BF78B7600AFDA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D71A0372BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift in Sources */,
+				8D71A0352BF78B7600AFDA2D /* ArbuzAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D71A0282BF78B7600AFDA2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D71A00F2BF78B7300AFDA2D /* ArbuzApp */;
+			targetProxy = 8D71A0272BF78B7600AFDA2D /* PBXContainerItemProxy */;
+		};
+		8D71A0322BF78B7600AFDA2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D71A00F2BF78B7300AFDA2D /* ArbuzApp */;
+			targetProxy = 8D71A0312BF78B7600AFDA2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D71A01E2BF78B7600AFDA2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D71A01F2BF78B7600AFDA2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D71A0382BF78B7600AFDA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D71A0392BF78B7600AFDA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D71A03B2BF78B7600AFDA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArbuzApp/Helpers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8D71A03C2BF78B7600AFDA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArbuzApp/Helpers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8D71A03E2BF78B7600AFDA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArbuzApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArbuzApp";
+			};
+			name = Debug;
+		};
+		8D71A03F2BF78B7600AFDA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArbuzApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArbuzApp";
+			};
+			name = Release;
+		};
+		8D71A0412BF78B7600AFDA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArbuzApp;
+			};
+			name = Debug;
+		};
+		8D71A0422BF78B7600AFDA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ismail.ArbuzAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArbuzApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D71A00B2BF78B7300AFDA2D /* Build configuration list for PBXProject "ArbuzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D71A0382BF78B7600AFDA2D /* Debug */,
+				8D71A0392BF78B7600AFDA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D71A03A2BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D71A03B2BF78B7600AFDA2D /* Debug */,
+				8D71A03C2BF78B7600AFDA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D71A03D2BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D71A03E2BF78B7600AFDA2D /* Debug */,
+				8D71A03F2BF78B7600AFDA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D71A0402BF78B7600AFDA2D /* Build configuration list for PBXNativeTarget "ArbuzAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D71A0412BF78B7600AFDA2D /* Debug */,
+				8D71A0422BF78B7600AFDA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D71A0082BF78B7300AFDA2D /* Project object */;
+}
