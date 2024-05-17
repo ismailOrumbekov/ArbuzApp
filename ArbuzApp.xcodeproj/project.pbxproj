@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0132BF78B7300AFDA2D /* AppDelegate.swift */; };
 		8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0152BF78B7300AFDA2D /* SceneDelegate.swift */; };
-		8D71A0182BF78B7300AFDA2D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0172BF78B7300AFDA2D /* MainViewController.swift */; };
 		8D71A01D2BF78B7600AFDA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D71A01C2BF78B7600AFDA2D /* Assets.xcassets */; };
 		8D71A0202BF78B7600AFDA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D71A01E2BF78B7600AFDA2D /* LaunchScreen.storyboard */; };
 		8D71A02B2BF78B7600AFDA2D /* ArbuzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A02A2BF78B7600AFDA2D /* ArbuzAppTests.swift */; };
 		8D71A0352BF78B7600AFDA2D /* ArbuzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */; };
 		8D71A0372BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */; };
 		8D71A0492BF7989B00AFDA2D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0482BF7989B00AFDA2D /* TabBarController.swift */; };
-		8D71A04C2BF798F900AFDA2D /* BucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */; };
+		8D71A04F2BF79C7200AFDA2D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A04E2BF79C7200AFDA2D /* MainPageView.swift */; };
+		8D71A0512BF79CE100AFDA2D /* BusketPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0502BF79CE000AFDA2D /* BusketPageView.swift */; };
+		8D71A0542BF7A07F00AFDA2D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0532BF7A07F00AFDA2D /* Product.swift */; };
+		8D71A05A2BF7A3EB00AFDA2D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0592BF7A3EA00AFDA2D /* HeaderView.swift */; };
+		8D71A05C2BF7A9B500AFDA2D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A05B2BF7A9B500AFDA2D /* ProductCell.swift */; };
+		8D71A05F2BF7ACB100AFDA2D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A05E2BF7ACB100AFDA2D /* Resources.swift */; };
+		8D71A0612BF7B09900AFDA2D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0602BF7B09900AFDA2D /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,6 @@
 		8D71A0102BF78B7300AFDA2D /* ArbuzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArbuzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D71A0132BF78B7300AFDA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D71A0152BF78B7300AFDA2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D71A0172BF78B7300AFDA2D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D71A01C2BF78B7600AFDA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D71A01F2BF78B7600AFDA2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D71A0212BF78B7600AFDA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +54,13 @@
 		8D71A0342BF78B7600AFDA2D /* ArbuzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITests.swift; sourceTree = "<group>"; };
 		8D71A0362BF78B7600AFDA2D /* ArbuzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D71A0482BF7989B00AFDA2D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketViewController.swift; sourceTree = "<group>"; };
+		8D71A04E2BF79C7200AFDA2D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		8D71A0502BF79CE000AFDA2D /* BusketPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketPageView.swift; sourceTree = "<group>"; };
+		8D71A0532BF7A07F00AFDA2D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8D71A0592BF7A3EA00AFDA2D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8D71A05B2BF7A9B500AFDA2D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		8D71A05E2BF7ACB100AFDA2D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		8D71A0602BF7B09900AFDA2D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,8 @@
 		8D71A0122BF78B7300AFDA2D /* ArbuzApp */ = {
 			isa = PBXGroup;
 			children = (
+				8D71A05D2BF7AC9500AFDA2D /* Resources */,
+				8D71A04D2BF79C5B00AFDA2D /* SwiftUIViews */,
 				8D71A0472BF78E8300AFDA2D /* Controllers */,
 				8D71A0462BF78E7C00AFDA2D /* ViewModels */,
 				8D71A0452BF78E7200AFDA2D /* Models */,
@@ -149,6 +161,7 @@
 		8D71A0452BF78E7200AFDA2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D71A0532BF7A07F00AFDA2D /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +169,7 @@
 		8D71A0462BF78E7C00AFDA2D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8D71A0602BF7B09900AFDA2D /* MainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,19 +177,52 @@
 		8D71A0472BF78E8300AFDA2D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D71A04A2BF798E900AFDA2D /* Tabs */,
 				8D71A0482BF7989B00AFDA2D /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		8D71A04A2BF798E900AFDA2D /* Tabs */ = {
+		8D71A04D2BF79C5B00AFDA2D /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
-				8D71A0172BF78B7300AFDA2D /* MainViewController.swift */,
-				8D71A04B2BF798F900AFDA2D /* BucketViewController.swift */,
+				8D71A0572BF7A3C100AFDA2D /* PageViews */,
 			);
-			path = Tabs;
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		8D71A0522BF79FDE00AFDA2D /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0582BF7A3DC00AFDA2D /* Components */,
+				8D71A0502BF79CE000AFDA2D /* BusketPageView.swift */,
+				8D71A04E2BF79C7200AFDA2D /* MainPageView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		8D71A0572BF7A3C100AFDA2D /* PageViews */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0522BF79FDE00AFDA2D /* TabViews */,
+			);
+			path = PageViews;
+			sourceTree = "<group>";
+		};
+		8D71A0582BF7A3DC00AFDA2D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A0592BF7A3EA00AFDA2D /* HeaderView.swift */,
+				8D71A05B2BF7A9B500AFDA2D /* ProductCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8D71A05D2BF7AC9500AFDA2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D71A05E2BF7ACB100AFDA2D /* Resources.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D71A0182BF78B7300AFDA2D /* MainViewController.swift in Sources */,
 				8D71A0492BF7989B00AFDA2D /* TabBarController.swift in Sources */,
+				8D71A04F2BF79C7200AFDA2D /* MainPageView.swift in Sources */,
 				8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */,
+				8D71A0512BF79CE100AFDA2D /* BusketPageView.swift in Sources */,
 				8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */,
-				8D71A04C2BF798F900AFDA2D /* BucketViewController.swift in Sources */,
+				8D71A0612BF7B09900AFDA2D /* MainViewModel.swift in Sources */,
+				8D71A05C2BF7A9B500AFDA2D /* ProductCell.swift in Sources */,
+				8D71A05F2BF7ACB100AFDA2D /* Resources.swift in Sources */,
+				8D71A0542BF7A07F00AFDA2D /* Product.swift in Sources */,
+				8D71A05A2BF7A3EB00AFDA2D /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
