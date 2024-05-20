@@ -39,6 +39,8 @@ struct ProductCell: View {
                 HStack(spacing: 10){
                     Text("\(Resources.formatNumber(product.price))тг")
                         .fontWeight(.bold)
+                        .padding(.trailing, 20)
+                    
                     Button {
                         print("hello world")
                     } label: {
@@ -50,8 +52,9 @@ struct ProductCell: View {
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 10)
-                .background(Color(hexString: "#F5F5F5"))
+                .background(Resources.Colors.blockColor)
                 .cornerRadius(15)
+                .frame(width: .infinity)
                 
                 
 
@@ -59,6 +62,7 @@ struct ProductCell: View {
             
         }
         .frame(width: Resources.screen.width * 0.45, height: Resources.screen.width * 0.55)
+        .padding(.bottom)
     }
 }
 

@@ -13,6 +13,10 @@ struct Resources{
     public static let font = "AvenirNext-regular"
     
     
+    struct Colors{
+        public static let blockColor = Color(hexString: "#F5F5F5")
+    }
+    
     
     public static func formatNumber(_ price: Int) -> String {
         let formatter = NumberFormatter()

@@ -22,6 +22,7 @@
 		8D71A05C2BF7A9B500AFDA2D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A05B2BF7A9B500AFDA2D /* ProductCell.swift */; };
 		8D71A05F2BF7ACB100AFDA2D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A05E2BF7ACB100AFDA2D /* Resources.swift */; };
 		8D71A0612BF7B09900AFDA2D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0602BF7B09900AFDA2D /* MainViewModel.swift */; };
+		8D71A0632BFB41CE00AFDA2D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71A0622BFB41CE00AFDA2D /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8D71A05B2BF7A9B500AFDA2D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		8D71A05E2BF7ACB100AFDA2D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		8D71A0602BF7B09900AFDA2D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8D71A0622BFB41CE00AFDA2D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,27 +187,12 @@
 		8D71A04D2BF79C5B00AFDA2D /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
-				8D71A0572BF7A3C100AFDA2D /* PageViews */,
-			);
-			path = SwiftUIViews;
-			sourceTree = "<group>";
-		};
-		8D71A0522BF79FDE00AFDA2D /* TabViews */ = {
-			isa = PBXGroup;
-			children = (
 				8D71A0582BF7A3DC00AFDA2D /* Components */,
 				8D71A0502BF79CE000AFDA2D /* BusketPageView.swift */,
 				8D71A04E2BF79C7200AFDA2D /* MainPageView.swift */,
+				8D71A0622BFB41CE00AFDA2D /* ProductDetailView.swift */,
 			);
-			path = TabViews;
-			sourceTree = "<group>";
-		};
-		8D71A0572BF7A3C100AFDA2D /* PageViews */ = {
-			isa = PBXGroup;
-			children = (
-				8D71A0522BF79FDE00AFDA2D /* TabViews */,
-			);
-			path = PageViews;
+			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
 		8D71A0582BF7A3DC00AFDA2D /* Components */ = {
@@ -357,6 +344,7 @@
 			files = (
 				8D71A0492BF7989B00AFDA2D /* TabBarController.swift in Sources */,
 				8D71A04F2BF79C7200AFDA2D /* MainPageView.swift in Sources */,
+				8D71A0632BFB41CE00AFDA2D /* ProductDetailView.swift in Sources */,
 				8D71A0142BF78B7300AFDA2D /* AppDelegate.swift in Sources */,
 				8D71A0512BF79CE100AFDA2D /* BusketPageView.swift in Sources */,
 				8D71A0162BF78B7300AFDA2D /* SceneDelegate.swift in Sources */,
