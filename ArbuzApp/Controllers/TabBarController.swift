@@ -26,7 +26,7 @@ class TabBarViewController: UITabBarController{
         
             homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
             
-            let busketPageView = BusketPageView(viewModel: BusketViewModel())
+            let busketPageView = BusketPageView(viewModel: BusketViewModel.shared)
             let profileVC = UIHostingController(rootView: busketPageView)
             profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "basket"), tag: 2)
             

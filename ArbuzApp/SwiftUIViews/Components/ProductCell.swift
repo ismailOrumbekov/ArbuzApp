@@ -10,19 +10,21 @@ import UIKit
 
 struct ProductCell: View {
     var product: Product
-    
+    @State var count = 0
+    @State var isCreated = false
+    @State var position: Position?
     
     var body: some View {
         VStack{
-            Image("tomat")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: Resources.screen.width * 0.45)
-                .clipped()
-                .cornerRadius(16)
-                .onTapGesture {
-                    presentViewController()
-                }
+            
+            AsyncImage(url: URL(string: product.imageURL)!)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: Resources.screen.width * 0.45)
+                        .clipped()
+                        .cornerRadius(16)
+                        .onTapGesture {
+                            presentViewController()
+                        }
             VStack{
                 Text(product.title)
                     .font(.custom(Resources.font, size: 17))
@@ -46,12 +48,53 @@ struct ProductCell: View {
                 
                 
                 HStack(spacing: 10){
-                    Text("\(Resources.formatNumber(product.price))тг")
-                        .fontWeight(.bold)
-                        .padding(.trailing, 20)
+                    
+                    if isCreated{
+                        Button {
+                            if count > 1 {
+                                BusketViewModel.shared.decreaseCount(position: position!)
+                                count -= 1
+                            }else if count == 1{
+                                BusketViewModel.shared.removePosition(position: position!)
+                                isCreated = false
+                            }
+                            
+                        } label: {
+                                Image(systemName: "minus")
+                                    .padding(.leading, 15)
+                                    .foregroundColor(.green)
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
+                        .foregroundColor(.white)
+                    }
+                    
+                    if isCreated{
+                        Text("\(count * product.price)тг")
+                            .fontWeight(.bold)
+                            .padding(.trailing, 20)
+                    }else{
+                        Text("\(Resources.formatNumber(product.price))тг")
+                            .fontWeight(.bold)
+                            .padding(.trailing, 20)
+                    }
+                    
+                    
+                    
                     
                     Button {
-                        print("hello world")
+                        if isCreated{
+                            BusketViewModel.shared.increaseCount(position: position!)
+                            count += 1
+                        }else{
+                            isCreated = true
+                            count = 1
+                            let position = Position(id: "\(BusketViewModel.shared.positions.count)", product: product, count: count)
+                               BusketViewModel.shared.addPosition(position: position)
+                            self.position = position
+                                            
+                        }
+                        
+
                     } label: {
                         Image(systemName: "plus")
                             .font(.title2)

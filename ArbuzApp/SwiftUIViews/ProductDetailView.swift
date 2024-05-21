@@ -3,6 +3,7 @@ import SwiftUI
 struct ProductDetailView: View {
     var productID: String
     var navigationController: UINavigationController?
+    @State private var showConfirmation = false
     @StateObject var viewModel = ProductViewModel(
         product: Product(id: "-1",
                          title: "",
@@ -16,22 +17,26 @@ struct ProductDetailView: View {
                          isRecommended: false))
     
     @State var count = 0
+    @State private var isLoading = true
+
     
     
     var body: some View {
         NavigationView {
             ZStack {
                 VStack{
-                    NavigationBackButtonVIew()
-                        .background(Color.white)
-                        .padding(.top, 20)
+                    
                     ScrollView {
                         VStack {
-                            Image("tomat")
-                                .resizable()
-                                .frame(height: 400)
-                                .frame(maxWidth: .infinity, maxHeight:400)
-                                .padding(.top)
+                            if !isLoading{
+                                AsyncImage(url: URL(string: viewModel.product.imageURL)!)
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(height: 400)
+                                            .clipped()
+                                            .cornerRadius(16)
+                            }
+                            
+                                        
                             Text(viewModel.product.title)
                                 .font(.title)
                                 .fontWeight(.bold)
@@ -61,64 +66,86 @@ struct ProductDetailView: View {
                     }
                     .onAppear {
                         getProductData()
+                        isLoading = false
                     }
                 }
                 
                 VStack {
-                                    Spacer()
-                                    HStack(spacing: 50) {
-                                        if count > 0 {
-                                            Button {
-                                                if count > 0 {
-                                                    count -= 1
-                                                }
-                                            } label: {
-                                                Image(systemName: "minus")
-                                                    .font(.system(size: 20, weight: .bold))
-                                                    .padding(.leading, 20)
-                                            }
-                                            .foregroundColor(.white)
-                                        }
-                                        
-                                        Button {
-                                            print("Добавить в корзину")
-                                        } label: {
-                                            Text("Добавить в корзину: \(count)")
-                                                .fontWeight(.bold)
-                                        }
-                                        .foregroundColor(.white)
-                                        .padding(.horizontal, 20)
-                                        
-                                        Button {
-                                            count += 1
-                                        } label: {
-                                            Image(systemName: "plus")
-                                                .font(.system(size: 20, weight: .bold))
-                                                .padding(.trailing, 20)
-                                        }
-                                        .foregroundColor(.white)
+                        Spacer()
+                        HStack(spacing: 30) {
+                            if count > 0 {
+                                Button {
+                                    if count > 0 {
+                                        count -= 1
                                     }
-                                    .frame(height: 70)
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .padding(.horizontal)
+                                } label: {
+                                    Image(systemName: count > 1 ? "minus" : "trash")
+                                            .font(.system(size: count > 0 ? 20 : 10, weight: .bold))
+                                            .padding(.leading, count > 0 ? 20 : 15)
+                                    
                                 }
+                                .foregroundColor(.white)
+                            }
+                            
+                            Button {
+                                let position = Position(id: "\(BusketViewModel.shared.positions.count)", product: viewModel.product, count: count)
+                                                
+                                                BusketViewModel.shared.addPosition(position: position)
+                                                
+                                                withAnimation {
+                                                    showConfirmation = true
+                                                }
+                                                
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                    withAnimation {
+                                                        showConfirmation = false
+                                                    }
+                                                    dismissPresentedViewController()
+                                                }
+                            } label: {
+                                Text("Добавить в корзину: \(count)")
+                                    .fontWeight(.bold)
+                            }
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 20)
+                            
+                            Button {
+                                count += 1
+                            } label: {
+                                Image(systemName: "plus")
+                                    .font(.system(size: 20, weight: .bold))
+                                    .padding(.trailing, 20)
+                            }
+                            .foregroundColor(.white)
+                        }
+                        .frame(height: 70)
+                        .background(Color.green)
+                        .cornerRadius(15)
+                        .padding(.horizontal)
+                     }
+                if showConfirmation {
+                    Image(systemName: "checkmark.seal.fill")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(.green)
+                                        .frame(width: 100, height: 100) // Увеличен размер
+                                        .transition(.scale)                             }
                 
             }
             .navigationBarBackButtonHidden(false)
         }
-        .navigationTitle("title")
     }
     
-    func backButtonTaped(){
-        UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true)
-    }
+    
     
     func getProductData(){
         DatabaseManager.shared.fetchProduct(id: productID) { product in
             guard let product = product else { return }
             viewModel.product = product
         }
+    }
+    func dismissPresentedViewController() {
+        UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: nil)
     }
 }
 

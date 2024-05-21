@@ -25,7 +25,7 @@ class DatabaseManager{
         return Resources.products
     }
     
-    public func fetchFavouriteProducts() -> [Product]{
-        fetchAllProducts().filter { $0.isFavourite == true }
+    public func fetchRecomendedProducts() -> [Product]{
+        fetchAllProducts().filter { $0.isRecommended == true }
     }
 }

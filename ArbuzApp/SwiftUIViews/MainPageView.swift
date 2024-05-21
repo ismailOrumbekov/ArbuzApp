@@ -21,7 +21,7 @@ struct MainPageView: View {
                         
                         
                         
-                        ForEach(DatabaseManager.shared.fetchFavouriteProducts(), id: \.id) { item in
+                        ForEach(DatabaseManager.shared.fetchRecomendedProducts(), id: \.id) { item in
                                 
                                 ProductCell(product: item)
                                     .frame(width: Resources.screen.width / 2.2)
