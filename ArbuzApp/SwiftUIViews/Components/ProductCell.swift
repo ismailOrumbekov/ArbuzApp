@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ProductCell: View {
     var product: Product
+    
+    
     var body: some View {
         VStack{
             Image("tomat")
@@ -17,6 +20,9 @@ struct ProductCell: View {
                 .frame(width: Resources.screen.width * 0.45)
                 .clipped()
                 .cornerRadius(16)
+                .onTapGesture {
+                    presentViewController()
+                }
             VStack{
                 Text(product.title)
                     .font(.custom(Resources.font, size: 17))
@@ -32,6 +38,9 @@ struct ProductCell: View {
                     Text("* \(product.minimumOrdersCount) \(product.unit)")
                         .font(.custom(Resources.font, size: 15))
 
+                }
+                .onTapGesture {
+                    presentViewController()
                 }
                 
                 
@@ -54,7 +63,6 @@ struct ProductCell: View {
                 .padding(.vertical, 10)
                 .background(Resources.Colors.blockColor)
                 .cornerRadius(15)
-                .frame(width: .infinity)
                 
                 
 
@@ -64,6 +72,20 @@ struct ProductCell: View {
         .frame(width: Resources.screen.width * 0.45, height: Resources.screen.width * 0.55)
         .padding(.bottom)
     }
+    
+
+
+    func presentViewController() {
+            let productDetailView = ProductDetailView(productID: product.id, navigationController: nil)
+            let hostingController = UIHostingController(rootView: productDetailView)
+            
+            let navigationController = UINavigationController(rootViewController: hostingController)
+            navigationController.isNavigationBarHidden = true
+            UIApplication.shared.windows.first?.rootViewController?.present(navigationController, 
+                                                                            animated: true,
+                                                                            completion: nil)
+        }
+
 }
 
 #Preview {

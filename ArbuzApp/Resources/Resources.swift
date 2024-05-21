@@ -15,6 +15,7 @@ struct Resources{
     
     struct Colors{
         public static let blockColor = Color(hexString: "#F5F5F5")
+        public static let passiveColor = Color(hexString: "#EDEEEE")
     }
     
     
@@ -28,6 +29,83 @@ struct Resources{
             return "\(price) "
         }
     }
+    
+    
+    
+    
+   static let products = [
+        Product(id: "1",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные Красные помидоры, местные v Красные помидоры, местныеv v v vКрасные помидоры, местные Красные помидоры, местные ",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: false,
+                                     isRecommended: false),
+         Product(id: "2",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: false,
+                                     isRecommended: false),
+        Product(id: "3",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: true,
+                                     isRecommended: false),
+        Product(id: "4",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: true,
+                                     isRecommended: false),
+        Product(id: "5",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: true,
+                                     isRecommended: false),
+        Product(id: "6",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: true,
+                                     isRecommended: false),
+       Product(id: "7",
+                                     title: "Помидоры",
+                                     imageURL: "djsf",
+                                     price: 400,
+                                     description: "Красные помидоры, местные",
+                                     unit: "кг",
+                                     minimumOrdersCount: 1,
+                                     ordersCount: 1,
+                                     isFavourite: true,
+                                     isRecommended: false)
+    
+    ]
 }
 
 extension Color {

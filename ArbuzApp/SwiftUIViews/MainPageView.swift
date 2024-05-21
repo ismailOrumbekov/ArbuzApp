@@ -18,8 +18,12 @@ struct MainPageView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
-                            ForEach(MainViewModel.shared.products, id: \.product.id) { item in
-                                ProductCell(product: item.product)
+                        
+                        
+                        
+                        ForEach(DatabaseManager.shared.fetchFavouriteProducts(), id: \.id) { item in
+                                
+                                ProductCell(product: item)
                                     .frame(width: Resources.screen.width / 2.2)
                                     .padding(.horizontal, 8)
                             }
@@ -46,8 +50,8 @@ struct MainPageView: View {
                             LazyVGrid(columns: [GridItem(.flexible(), spacing: 8),
                                                 GridItem(.flexible(), spacing: 8)], spacing: 8
                             ) {
-                                ForEach(MainViewModel.shared.products, id: \.product.id) { item in
-                                    ProductCell(product: item.product)
+                                ForEach(DatabaseManager.shared.fetchAllProducts(), id: \.id) { item in
+                                    ProductCell(product: item)
                                 }
                                 
                                 
@@ -61,8 +65,12 @@ struct MainPageView: View {
         }
         
     }
+    
+
+
 }
 
 #Preview {
     MainPageView()
 }
+

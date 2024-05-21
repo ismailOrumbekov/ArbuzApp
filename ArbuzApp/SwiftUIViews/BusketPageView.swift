@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct BusketPageView: View {
+    
+    var viewModel: BusketViewModel
+    
     var body: some View {
         Text("Hello, World!")
     }
 }
 
 #Preview {
-    BusketPageView()
+    BusketPageView(viewModel: BusketViewModel())
 }
