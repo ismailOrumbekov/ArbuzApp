@@ -88,20 +88,23 @@ struct ProductDetailView: View {
                             }
                             
                             Button {
-                                let position = Position(id: "\(BusketViewModel.shared.positions.count)", product: viewModel.product, count: count)
-                                                
-                                                BusketViewModel.shared.addPosition(position: position)
-                                                
-                                                withAnimation {
-                                                    showConfirmation = true
-                                                }
-                                                
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                if count > 0 {
+                                    let position = Position(id: "\(BusketViewModel.shared.positions.count)", product: viewModel.product, count: count)
+                                                    
+                                                    BusketViewModel.shared.addPosition(position: position)
+                                                    
                                                     withAnimation {
-                                                        showConfirmation = false
+                                                        showConfirmation = true
                                                     }
-                                                    dismissPresentedViewController()
-                                                }
+                                                    
+                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                        withAnimation {
+                                                            showConfirmation = false
+                                                        }
+                                                        dismissPresentedViewController()
+                                                    }
+                                }
+                                
                             } label: {
                                 Text("Добавить в корзину: \(count)")
                                     .fontWeight(.bold)

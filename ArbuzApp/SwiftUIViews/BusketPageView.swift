@@ -23,7 +23,7 @@ struct BusketPageView: View {
                 
                 
                 Button {
-                    print("hello world")
+                    print("Оплата прошла успешно)")
                 } label: {
                     VStack{
                         Text("Перейти к оплате")
